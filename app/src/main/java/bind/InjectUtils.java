@@ -92,7 +92,9 @@ public class InjectUtils {
             View view = activity.findViewById(widgetBind.value());
             //创建对象实例
             field.set(activity, view);
-            view.setOnClickListener((View.OnClickListener) activity);
+            if (widgetBind.onclick()) {
+                view.setOnClickListener((View.OnClickListener) activity);
+            }
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         }

@@ -8,6 +8,7 @@ import java.lang.annotation.Target;
 
 /**
  * Created by yanghj on 16/8/11.
+ * supply object initialization and click event binding, needs the activity implements View.OnClickListener first
  */
 @Documented
 @Target(ElementType.FIELD)

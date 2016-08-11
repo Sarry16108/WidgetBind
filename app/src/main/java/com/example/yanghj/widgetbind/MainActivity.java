@@ -19,6 +19,8 @@ public class MainActivity extends Activity implements View.OnClickListener{
     private Button  mButton1;
     @WidgetBind(value = R.id.button2, onclick = true)
     private Button  mButton2;
+    @WidgetBind(value = R.id.button3, onclick = false)
+    private Button  mButton3;
 
 
     @Override
